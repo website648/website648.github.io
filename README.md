@@ -1,1 +1,1 @@
-# minigamething.github.io
+# project.github.io
