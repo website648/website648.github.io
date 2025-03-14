@@ -4,103 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Civil Rights Act of 1964</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .nav button {
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            background: #007BFF;
-            color: white;
-            border-radius: 5px;
-        }
-        .nav button:hover {
-            background: #0056b3;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>The Civil Rights Act of 1964</h1>
-        <div class="nav">
-            <button onclick="scrollToSection('background')">Background</button>
-            <button onclick="scrollToSection('build-up')">Build-Up</button>
-            <button onclick="scrollToSection('thesis')">Thesis</button>
-            <button onclick="scrollToSection('heart')">Heart of Story</button>
-            <button onclick="scrollToSection('short-term')">Short-Term Impact</button>
-            <button onclick="scrollToSection('long-term')">Long-Term Impact</button>
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#background">Background & Setting</a></li>
+                <li><a href="#build-up">Build-Up</a></li>
+                <li><a href="#thesis">Thesis</a></li>
+                <li><a href="#heart">Heart of Story</a></li>
+                <li><a href="#short-term">Short-Term Impact</a></li>
+                <li><a href="#long-term">Long-Term Impact</a></li>
+            </ul>
         </div>
 
-        <section id="background">
-            <h2>Background and Setting</h2>
-            <img src="background.jpg" alt="Background image">
-            <p>The Civil Rights Act of 1964 was enacted to address systemic racial discrimination in the United States...</p>
-        </section>
+        <!-- Main Content -->
+        <div class="content">
+            <section id="background">
+                <h2>Background & Setting</h2>
+                <p>The Civil Rights Act of 1964 was a landmark piece of legislation that aimed to address racial discrimination and promote equality for African Americans. This law was introduced against the backdrop of the Civil Rights Movement, which was gaining momentum during the 1960s. It came at a time when segregation and systemic racism were still widespread in the United States, especially in the South, and this legislation sought to put an end to such practices.</p>
+                <img src="background.jpg" alt="Civil Rights Movement">
+            </section>
 
-        <section id="build-up">
-            <h2>The Build-Up</h2>
-            <img src="build-up.jpg" alt="Build-up image">
-            <p>The movement gained momentum through key events such as the Montgomery Bus Boycott...</p>
-        </section>
+            <section id="build-up">
+                <h2>Build-Up</h2>
+                <p>The build-up to the Civil Rights Act of 1964 involved years of protests, sit-ins, marches, and legal battles. The fight for civil rights was fueled by key figures such as Dr. Martin Luther King Jr., Rosa Parks, and many others. In 1963, the March on Washington for Jobs and Freedom, where King delivered his famous "I Have a Dream" speech, galvanized public support for the cause. President John F. Kennedy's assassination later that year created a political opening for new legislation, with President Lyndon B. Johnson promising to push forward with the civil rights agenda.</p>
+                <img src="build-up.jpg" alt="Civil Rights Protests">
+            </section>
 
-        <section id="thesis">
-            <h2>The Thesis</h2>
-            <img src="thesis.jpg" alt="Thesis image">
-            <p>The Act’s core principle was to ensure equality under the law for all citizens...</p>
-        </section>
+            <section id="thesis">
+                <h2>Thesis</h2>
+                <p>The thesis of the Civil Rights Act of 1964 was to end segregation and discrimination based on race, color, religion, sex, or national origin. It sought to promote equal opportunities in employment, education, and public accommodations. By targeting the federal government's role in enforcing civil rights, the Act aimed to create a more just society where all people, regardless of their background, could enjoy the same rights and opportunities.</p>
+                <img src="thesis.jpg" alt="Equality for All">
+            </section>
 
-        <section id="heart">
-            <h2>The Heart of the Story</h2>
-            <img src="heart.jpg" alt="Heart of the story image">
-            <p>The Civil Rights Act symbolized the culmination of years of activism and struggle...</p>
-        </section>
+            <section id="heart">
+                <h2>Heart of Story</h2>
+                <p>The heart of the story of the Civil Rights Act is the relentless struggle of activists and ordinary citizens who fought for change. It is the story of courage and perseverance, even in the face of violence, resistance, and adversity. The passage of the Act marked a significant victory for civil rights, as it outlawed discrimination in public places, provided equal access to education, and ensured fair employment practices. It also gave the federal government the power to enforce desegregation policies, setting the stage for further legal battles and social change.</p>
+                <img src="heart.jpg" alt="Civil Rights March">
+            </section>
 
-        <section id="short-term">
-            <h2>Short-Term Impact</h2>
-            <img src="short-term.jpg" alt="Short-term impact image">
-            <p>Immediate changes included desegregation in public spaces and workplaces...</p>
-        </section>
+            <section id="short-term">
+                <h2>Short-Term Impact</h2>
+                <p>The short-term impact of the Civil Rights Act of 1964 was significant. The immediate effects were seen in the desegregation of public facilities, schools, and other institutions. Many African Americans were able to find better employment opportunities, and discrimination in the workplace began to decrease. The Act also led to the creation of the Equal Employment Opportunity Commission (EEOC), which played a key role in addressing workplace discrimination. However, challenges remained, and the Act's enforcement was slow in some areas.</p>
+                <img src="short-term.jpg" alt="Desegregation Progress">
+            </section>
 
-        <section id="long-term">
-            <h2>Long-Term Impact</h2>
-            <img src="long-term.jpg" alt="Long-term impact image">
-            <p>The act paved the way for future civil rights legislation and long-lasting social change...</p>
-        </section>
+            <section id="long-term">
+                <h2>Long-Term Impact</h2>
+                <p>In the long term, the Civil Rights Act of 1964 laid the foundation for future civil rights advances. It was a crucial step in the fight for racial equality and inspired other legislation, such as the Voting Rights Act of 1965 and the Fair Housing Act of 1968. The Act helped to change public attitudes about race and inequality in the United States, though racial disparities persist to this day. Over time, the Act has continued to serve as a powerful tool in the ongoing struggle for social justice and civil rights for all Americans.</p>
+                <img src="long-term.jpg" alt="Ongoing Struggle for Equality">
+            </section>
+        </div>
     </div>
 
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
