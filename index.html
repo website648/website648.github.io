@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>《Civil Rights Act of 1964》NHD 2025<h1>
-    <h2>Background<h2>
-      <p>
-      During the civl rights movement
-      <p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Rights Act of 1964</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .nav button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        .nav button:hover {
+            background: #0056b3;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Civil Rights Act of 1964</h1>
+        <div class="nav">
+            <button onclick="scrollToSection('background')">Background</button>
+            <button onclick="scrollToSection('build-up')">Build-Up</button>
+            <button onclick="scrollToSection('thesis')">Thesis</button>
+            <button onclick="scrollToSection('heart')">Heart of Story</button>
+            <button onclick="scrollToSection('short-term')">Short-Term Impact</button>
+            <button onclick="scrollToSection('long-term')">Long-Term Impact</button>
+        </div>
+
+        <section id="background">
+            <h2>Background and Setting</h2>
+            <img src="background.jpg" alt="Background image">
+            <p>The Civil Rights Act of 1964 was enacted to address systemic racial discrimination in the United States...</p>
+        </section>
+
+        <section id="build-up">
+            <h2>The Build-Up</h2>
+            <img src="build-up.jpg" alt="Build-up image">
+            <p>The movement gained momentum through key events such as the Montgomery Bus Boycott...</p>
+        </section>
+
+        <section id="thesis">
+            <h2>The Thesis</h2>
+            <img src="thesis.jpg" alt="Thesis image">
+            <p>The Act’s core principle was to ensure equality under the law for all citizens...</p>
+        </section>
+
+        <section id="heart">
+            <h2>The Heart of the Story</h2>
+            <img src="heart.jpg" alt="Heart of the story image">
+            <p>The Civil Rights Act symbolized the culmination of years of activism and struggle...</p>
+        </section>
+
+        <section id="short-term">
+            <h2>Short-Term Impact</h2>
+            <img src="short-term.jpg" alt="Short-term impact image">
+            <p>Immediate changes included desegregation in public spaces and workplaces...</p>
+        </section>
+
+        <section id="long-term">
+            <h2>Long-Term Impact</h2>
+            <img src="long-term.jpg" alt="Long-term impact image">
+            <p>The act paved the way for future civil rights legislation and long-lasting social change...</p>
+        </section>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
 </html>
